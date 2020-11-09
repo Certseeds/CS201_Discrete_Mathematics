@@ -1,0 +1,12 @@
+### 
+## @Github: https://github.com/Certseeds/CS201_Discrete_Mathematics
+## @Organization: SUSTech
+## @Author: nanoseeds
+## @Date: 2020-11-09 19:45:17
+## @LastEditors: nanoseeds
+## @LastEditTime: 2020-11-09 19:49:47
+### 
+#
+*.pdf
+*.zip
+!*.md
