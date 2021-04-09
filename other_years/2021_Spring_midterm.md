@@ -4,7 +4,7 @@
  * @Author: nanoseeds
  * @Date: 2021-04-09 15:50:07
  * @LastEditors: nanoseeds
- * @LastEditTime: 2021-04-09 16:27:54
+ * @LastEditTime: 2021-04-09 16:29:45
  * @License: CC-BY-NC-SA_V4_0 or any later version 
  -->
 ...
@@ -61,6 +61,6 @@ something is lost
 
 ##### (b) If $P$ is of any length, using any of the logical connectives, $\neg$,$\wedge$,$\vee$,$\rightarrow$,$\leftrightarrow$, prove that $P$ is logically equivalent to a proposition of the from
 
-$$ A \Box B,$$
+$$ A \mho B,$$
 
-where $\Box$ is one of the $\wedge$,$\vee$,$\rightarrow$, and $A$ and $B$ are chosen from {$p$,$\neg p$,$q$,$\neg q$}.
+where $\mho$ is one of the $\wedge$,$\vee$,$\rightarrow$, and $A$ and $B$ are chosen from {$p$,$\neg p$,$q$,$\neg q$}.
