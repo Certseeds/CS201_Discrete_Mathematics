@@ -4,7 +4,7 @@
  * @Author: nanoseeds
  * @Date: 2021-04-09 12:08:27
  * @LastEditors: nanoseeds
- * @LastEditTime: 2021-04-15 09:55:52
+ * @LastEditTime: 2021-04-15 09:58:48
  * @License: CC-BY-NC-SA_V4_0 or any later version 
  -->
 
@@ -68,7 +68,7 @@ $h(x)$ be "x is hard-working".
 "All students are hard-working" means $\forall x (s(x) {\rightarrow} h(x))$  
 "There is a student who will go to CMU" means $\exists x (s(x) \wedge c(x))$  
 
-Then 
+Then
 
 | order |                   step                    |               reason                |
 | :---: | :---------------------------------------: | :---------------------------------: |
@@ -84,7 +84,7 @@ Then
 
 ##### Q.3 (9 points) If two sets $A$ and $B$ are both *uncountable* sets, then what kindof sets can$A \cap B$ be,*finite*,*countably infinite* or *uncountable*? Give examples to explain your answer
 
-$A \cap B$ can be finite, e.g. A = $\{ x \in \mathbb{R} | x \geqslant 0 \}$, B = $\{ x \in \mathbb{R} | x \leqslant 0 \}$
+$A \cap B$ can be finite, e.g. A = $\{ x \in \mathbb{R} | x \geq 0 \}$, B = $\{ x \in \mathbb{R} | x \leq 0 \}$
 
 $A \cap B$ can be countably infinite, e.g. A = $\{ x \in \mathbb{R} | 0 < x < 1 \}$, B = $\{ x \in \mathbb{R} | 1 < x < 2 \}$
 
@@ -98,14 +98,12 @@ $x,y,u,v \in \mathbb{R}$, $f(x,y) = f(u,v)$ so
 $$(2x - y,2y - x) = (2u - v,2v - u)$$
 Then
 
-$$
-\left\{
+$$\left\{
   \begin{aligned}
     (1)&&&&   2x - y & = & 2u - v \\
     (2)&&&&   2y - x & = & 2v - u \\
   \end{aligned}
-\right.
-$$
+\right.$$
 
 Then
 
@@ -113,14 +111,12 @@ $$ 2x - y + 2(2y - x) = 2u - v + 2(2v - u)$$
 
 Then
 
-$$
-\left\{
+$$\left\{
   \begin{aligned}
      x = u \\
      y = v \\
   \end{aligned}
-\right.
-$$
+\right.$$
 
 so $f$ is one-to-one
 
@@ -129,25 +125,21 @@ so $f$ is one-to-one
 for each element $(u,v) \in \mathbb{R}^{2}$. we want to find $(x,y)$ satisfying $f(x,y) = (u,v)$.
 so
 
-$$
-\left\{
+$$\left\{
   \begin{aligned}
     2x - y & = & u \\
     2y - x & = & v \\
   \end{aligned}
-\right.
-$$
+\right.$$
 
 so
 
-$$ 
-\left\{
+$$\left\{
   \begin{aligned}
     x & = & \frac{2}{3}u + \frac{1}{3}v \\
     y & = & \frac{1}{3}u + \frac{2}{3}v \\
   \end{aligned}
-\right.
-$$
+\right.$$
 
 so $f$ is onto.
 
