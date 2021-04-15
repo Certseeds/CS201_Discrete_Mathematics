@@ -4,7 +4,7 @@
  * @Author: nanoseeds
  * @Date: 2021-04-09 12:08:27
  * @LastEditors: nanoseeds
- * @LastEditTime: 2021-04-15 00:54:25
+ * @LastEditTime: 2021-04-15 09:55:52
  * @License: CC-BY-NC-SA_V4_0 or any later version 
  -->
 
@@ -49,9 +49,9 @@ Two ways to do this:
 We now can see that the rightmost column doesnotmatch the right-most column in the truth table for $((p{\rightarrow}q){\rightarrow}p){\rightarrow}q)$
 
 - Using logical equivalences:
- 
+
  $$p{\rightarrow}(q{\rightarrow}(p{\rightarrow}q)) \equiv \neg p \vee (\neg q \vee (\neg p \vee q)) \\  \equiv (\neg p \vee \neg q) \vee (\neg p \vee q) \\ \neg p \vee T \\ \equiv T$$
- 
+
  By the truth table for $((p{\rightarrow}q){\rightarrow}p){\rightarrow}q)$, they are 
  *not* logically equivalent.
 
@@ -82,15 +82,74 @@ Then
 |   8   |      $c(x) \wedge h(x) \wedge s(x)$       |    conjunction using 3, 6 and 7.    |
 |   9   | $\exists x(c(x) \wedge h(x) \wedge s(x))$ | existential generalization using 8. |
 
-
-
 ##### Q.3 (9 points) If two sets $A$ and $B$ are both *uncountable* sets, then what kindof sets can$A \cap B$ be,*finite*,*countably infinite* or *uncountable*? Give examples to explain your answer
 
-</br>
+$A \cap B$ can be finite, e.g. A = $\{ x \in \mathbb{R} | x \geqslant 0 \}$, B = $\{ x \in \mathbb{R} | x \leqslant 0 \}$
+
+$A \cap B$ can be countably infinite, e.g. A = $\{ x \in \mathbb{R} | 0 < x < 1 \}$, B = $\{ x \in \mathbb{R} | 1 < x < 2 \}$
+
+$A \cap B$ can be uncountable, e.g. A = $\{ x \in \mathbb{R} | 0 < x < 1 \}$, B = $\{ x \in \mathbb{R} | 0 < x < 2 \}$
 
 ##### Q.4 (10 points) Consider the functionf : $\mathbb{R}^2{\rightarrow} \mathbb{R}^2$ defined as $(x,y){\mapsto}(2x−y,2y-x)$. Prove or disprove that $f$ is a bijective function.
 
-</br>
+1. show it is one-to-one.
+$x,y,u,v \in \mathbb{R}$, $f(x,y) = f(u,v)$ so 
+
+$$(2x - y,2y - x) = (2u - v,2v - u)$$
+Then
+
+$$
+\left\{
+  \begin{aligned}
+    (1)&&&&   2x - y & = & 2u - v \\
+    (2)&&&&   2y - x & = & 2v - u \\
+  \end{aligned}
+\right.
+$$
+
+Then
+
+$$ 2x - y + 2(2y - x) = 2u - v + 2(2v - u)$$
+
+Then
+
+$$
+\left\{
+  \begin{aligned}
+     x = u \\
+     y = v \\
+  \end{aligned}
+\right.
+$$
+
+so $f$ is one-to-one
+
+2. now show it's onto
+
+for each element $(u,v) \in \mathbb{R}^{2}$. we want to find $(x,y)$ satisfying $f(x,y) = (u,v)$.
+so
+
+$$
+\left\{
+  \begin{aligned}
+    2x - y & = & u \\
+    2y - x & = & v \\
+  \end{aligned}
+\right.
+$$
+
+so
+
+$$ 
+\left\{
+  \begin{aligned}
+    x & = & \frac{2}{3}u + \frac{1}{3}v \\
+    y & = & \frac{1}{3}u + \frac{2}{3}v \\
+  \end{aligned}
+\right.
+$$
+
+so $f$ is onto.
 
 ##### Q.5 (12 points)
 
