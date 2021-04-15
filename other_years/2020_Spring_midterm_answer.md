@@ -4,7 +4,7 @@
  * @Author: nanoseeds
  * @Date: 2021-04-09 12:08:27
  * @LastEditors: nanoseeds
- * @LastEditTime: 2021-04-15 09:58:48
+ * @LastEditTime: 2021-04-15 20:51:27
  * @License: CC-BY-NC-SA_V4_0 or any later version 
  -->
 
@@ -147,17 +147,41 @@ so $f$ is onto.
 
 ###### (1) Derive a formula in terms of $n$ for the summation $\sum_{i=1}^{n}{i \cdot 2^{-i}}$
 
-</br>
+We start from the summation of the first $n$ terms in the geometric progression.
+
+$$\sum_{i=1}^{n}x^{i} = \frac{x(1-x^{n})}{1-x}$$
+
+Taking the discrete derivative for both sides, we have 
+
+$$\sum_{i=1}^{n} i \cdot x^{i-1} = \frac{(x- x^{n+1})'(1-x) - (x - x^{n+1})(1-x)'}{(1-x)^2} \\ = \frac{nx^{n+1} - (n+1)x^n+1}{(1-x)^2}$$
+
+So,
+
+$$\sum_{i=1}^{n} i \cdot x^{i} = \frac{nx^{n+2} - (n+1)x^{n+1}+x}{(1-x)^2}$$
+
+so
+
+$$\sum_{i=1}^{n} i \cdot (\frac{1}{2})^{i} = \frac{n(\frac{1}{2})^{n+2} - (n+1)(\frac{1}{2})^{n+1}+(\frac{1}{2})}{(1-(\frac{1}{2}))^2} \\ = 2 - (n+2)2^{-n}$$
 
 ###### (2) Give a formula for $\sum_{i \geq 1}{i \cdot 2^{-i}}$
 
-</br>
+$$\sum_{i \geq 1} i \cdot 2^{-i} = \lim_{n \to \infin} \sum_{i=1}^{n} i \cdot 2^{-i} \\ = \lim_{n \to \infin}(2 - (n+2) \cdot 2^{-n}) \\ = 2$$
 
 ##### Q.6 (10 points) For three positive integers $a$,$b$ and $k$, prove or disprove that
 
-$gcd(ka,kb) = k \cdot gcd(a,b) $
+$$gcd(ka,kb) = k \cdot gcd(a,b) $$
 
-</br>
+Answer:
+
+Let $d = gcd(ka,kb)$, $d' = gcd(ka,kb)$. We want to prove that $d' = kd$
+
+Since $d = gcd(ka,kb)$, By Bezout's identity, there exist integers $s$ and $t$ such that $d = sa + tb$.
+
+Then we have $kd = s(ka)+t(kb)$. Thus, $kd$ is a linear combination of $ka$ and $kb$, This means $d'|kd$.
+
+On the other hand, since $d|a$ and $d|b$, we have $kd|ka$ and $kd|kb$. Then $kd$ is a common divisor of $kd|ka$ and $kd|kb$. However, $d' = gcd(ka,kb)$ is the largest one of the common divisors. It follows that $kd \leq d'$
+
+Therefor, We have $d' = kd$, i.e., $gcd(ka,kb) = kgcd(a,b)$
 
 ##### Q.7 (12 points) Consider the numbers of the form $n^{13} − 2\cdot n^{7}+n$, wherenis aninteger. Determine for which values ofn, the number $n^{13} − 2\cdot n^{7}+n$ is divisible by 98
 
