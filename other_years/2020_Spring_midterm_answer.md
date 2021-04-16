@@ -4,7 +4,7 @@
  * @Author: nanoseeds
  * @Date: 2021-04-09 12:08:27
  * @LastEditors: nanoseeds
- * @LastEditTime: 2021-04-16 19:28:31
+ * @LastEditTime: 2021-04-16 19:32:08
  * @License: CC-BY-NC-SA_V4_0 or any later version 
  -->
 
@@ -164,7 +164,7 @@ $$\sum_{i=1}^{n} i \cdot (\frac{1}{2})^{i} = \frac{n(\frac{1}{2})^{n+2} - (n+1)(
 
 ###### (2) Give a formula for $\sum_{i \geq 1}{i \cdot 2^{-i}}$
 
-$$\sum_{i \geq 1} i \cdot 2^{-i} = \lim_{n \to \infin} \sum_{i=1}^{n} i \cdot 2^{-i} \\ = \lim_{n \to \infin}(2 - (n+2) \cdot 2^{-n}) \\ = 2$$
+$$\sum_{i \geq 1} i \cdot 2^{-i} = \lim_{n \to \infty} \sum_{i=1}^{n} i \cdot 2^{-i} \\ = \lim_{n \to \infty}(2 - (n+2) \cdot 2^{-n}) \\ = 2$$
 
 ##### Q.6 (10 points) For three positive integers $a$,$b$ and $k$, prove or disprove that
 
