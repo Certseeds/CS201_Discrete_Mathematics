@@ -4,7 +4,7 @@
  * @Author: nanoseeds
  * @Date: 2021-04-09 12:08:27
  * @LastEditors: nanoseeds
- * @LastEditTime: 2021-04-15 20:51:27
+ * @LastEditTime: 2021-04-16 17:05:16
  * @License: CC-BY-NC-SA_V4_0 or any later version 
  -->
 
@@ -20,7 +20,7 @@
 
 **Note**: The Midterm exam is **closed book**. Please do *NOT* refer to the textbook or any other references. Any misbehavior will be dealt with severely according toour plagiarism regulation. Please upload your solutions to **Blackboard before 18:30**(You have half an hour to upload!)**No extended submission will beaccepted**! Good luck!
 
-##### Q.1 (11 Points) Consider the proposition $((p{\rightarrow}q){\rightarrow}p){\rightarrow}q)$ 
+##### Q.1 (11 Points) Consider the proposition $((p{\rightarrow}q){\rightarrow}p){\rightarrow}q)$
 
 ###### (1) Construct the truth table for this proposition
 
@@ -52,8 +52,7 @@ We now can see that the rightmost column doesnotmatch the right-most column in t
 
  $$p{\rightarrow}(q{\rightarrow}(p{\rightarrow}q)) \equiv \neg p \vee (\neg q \vee (\neg p \vee q)) \\  \equiv (\neg p \vee \neg q) \vee (\neg p \vee q) \\ \neg p \vee T \\ \equiv T$$
 
- By the truth table for $((p{\rightarrow}q){\rightarrow}p){\rightarrow}q)$, they are 
- *not* logically equivalent.
+ By the truth table for $((p{\rightarrow}q){\rightarrow}p){\rightarrow}q)$, they are  *not* logically equivalent.
 
 ##### Q.2 (12 Points) For the following argument, explain which rules of inference areused for each step
 
@@ -90,10 +89,10 @@ $A \cap B$ can be countably infinite, e.g. A = $\{ x \in \mathbb{R} | 0 < x < 1 
 
 $A \cap B$ can be uncountable, e.g. A = $\{ x \in \mathbb{R} | 0 < x < 1 \}$, B = $\{ x \in \mathbb{R} | 0 < x < 2 \}$
 
-##### Q.4 (10 points) Consider the functionf : $\mathbb{R}^2{\rightarrow} \mathbb{R}^2$ defined as $(x,y){\mapsto}(2x−y,2y-x)$. Prove or disprove that $f$ is a bijective function.
+##### Q.4 (10 points) Consider the functionf : $\mathbb{R}^2{\rightarrow} \mathbb{R}^2$ defined as $(x,y){\mapsto}(2x−y,2y-x)$. Prove or disprove that $f$ is a bijective function
 
 1. show it is one-to-one.
-$x,y,u,v \in \mathbb{R}$, $f(x,y) = f(u,v)$ so 
+$x,y,u,v \in \mathbb{R}$, $f(x,y) = f(u,v)$ so
 
 $$(2x - y,2y - x) = (2u - v,2v - u)$$
 Then
@@ -151,7 +150,7 @@ We start from the summation of the first $n$ terms in the geometric progression.
 
 $$\sum_{i=1}^{n}x^{i} = \frac{x(1-x^{n})}{1-x}$$
 
-Taking the discrete derivative for both sides, we have 
+Taking the discrete derivative for both sides, we have
 
 $$\sum_{i=1}^{n} i \cdot x^{i-1} = \frac{(x- x^{n+1})'(1-x) - (x - x^{n+1})(1-x)'}{(1-x)^2} \\ = \frac{nx^{n+1} - (n+1)x^n+1}{(1-x)^2}$$
 
@@ -183,13 +182,27 @@ On the other hand, since $d|a$ and $d|b$, we have $kd|ka$ and $kd|kb$. Then $kd$
 
 Therefor, We have $d' = kd$, i.e., $gcd(ka,kb) = kgcd(a,b)$
 
-##### Q.7 (12 points) Consider the numbers of the form $n^{13} − 2\cdot n^{7}+n$, wherenis aninteger. Determine for which values ofn, the number $n^{13} − 2\cdot n^{7}+n$ is divisible by 98
+##### Q.7 (12 points) Consider the numbers of the form $n^{13} − 2\cdot n^{7}+n$, wherenis aninteger. Determine for which values of $n$, the number $n^{13} − 2\cdot n^{7}+n$ is divisible by 98
 
-</br>
+$98 = 2 \cdot 7^{2}$ and $gcd(2,49) = 1$, we need to show $n^{13} − 2\cdot n^{7}+n$ can be divisible by 2 and 49.
+
+$-2 \cdot n^{7}$ is alawys even. the other part $n^{13} + n =(n^{12}+1)n$, if n is even, then it is even, if n is odd, then the first part is even. so $n^{13} − 2\cdot n^{7}+n$ is divisible by 2.
+
+then we need to prove $n^{13} − 2\cdot n^{7}+n$ can be divide by 49.
+
+$$n^{13} − 2\cdot n^{7}+n = n(n^6 -1)^2$$
+
+if $n \; mod \; 7 = 0$, then $(n^6 -1)^2$ is not divisible by 7.
+
+if $n \; mod \; 7 \neq 0$, then $(n^6 -1)^2$ is divisible by 7 by Fermat's little theorem.
+
+if $n \; mod \; 49 = 0$, then the other part is no need.
+
+So, all in all, $n \; mod \; 49 = 0$ or $n \; mod \; 7 \neq 0$
 
 ##### Q.8 (14 points) For a collection of balls, the number is not known
 
-If we count them by 2’s, we have 1 left over; 
+If we count them by 2’s, we have 1 left over;  
 by 3, we have nothing left;  
 by 4, we have 1 leftover;  
 by 5, we have 4 left over;  
@@ -199,7 +212,54 @@ by 8, we have 1 left over;
 by 9, nothing is left.  
 How many balls are there?Give the details of your calculation
 
-</br>
+We have
+
+$$X \equiv 1 (mod \; 2)$$
+$$X \equiv 0 (mod \; 3)$$
+$$X \equiv 1 (mod \; 4)$$
+$$X \equiv 4 (mod \; 5)$$
+$$X \equiv 3 (mod \; 6)$$
+$$X \equiv 0 (mod \; 7)$$
+$$X \equiv 1 (mod \; 8)$$
+$$X \equiv 0 (mod \; 9)$$
+
+$X \equiv 3 (mod \; 6)$, so $x = 6k+3$, it make $X \equiv 1 (mod \; 2)$ and $X \equiv 0 (mod \; 3)$, in other word, we now have
+
+$$X \equiv 1 (mod \; 2)$$
+$$X \equiv 0 (mod \; 3)$$
+$$X \equiv 1 (mod \; 4)$$
+$$X \equiv 4 (mod \; 5)$$
+$$X \equiv 0 (mod \; 7)$$
+$$X \equiv 1 (mod \; 8)$$
+$$X \equiv 0 (mod \; 9)$$
+
+$X \equiv 0 (mod \; 9)$ make $X \equiv 0 (mod \; 3)$ always true, then 
+
+$$X \equiv 1 (mod \; 2)$$
+$$X \equiv 1 (mod \; 4)$$
+$$X \equiv 4 (mod \; 5)$$
+$$X \equiv 0 (mod \; 7)$$
+$$X \equiv 1 (mod \; 8)$$
+$$X \equiv 0 (mod \; 9)$$
+
+$X \equiv 1 (mod \; 8)$ make $X \equiv 1 (mod \; 2)$ and $X \equiv 1 (mod \; 4)$ always true, then 
+
+$$X \equiv 4 (mod \; 5)$$
+$$X \equiv 0 (mod \; 7)$$
+$$X \equiv 1 (mod \; 8)$$
+$$X \equiv 0 (mod \; 9)$$
+
+Then $5,7,8,9$ are pairwise relatively prime, we can use Chinese Remainder Theroem or back substitution to solve this system of congruences. 
+
+$$m = 5 \cdot 7 \cdot 8 \cdot 9 = 2520$$
+$$m_1 = 7 \cdot 8 \cdot 9 = 504$$
+$$m_2 = 5 \cdot 8 \cdot 9 = 360$$
+$$m_3 = 5 \cdot 7  \cdot 9 = 315$$
+$$m_4 = 5 \cdot 7 \cdot 8 = 280$$
+
+By extended Euclidean algorithm, we have $y_1 = 4, y_2 = 5, y_3 = 3, y_4 = 1$.Then by Chinese Remainder Theorem, we have the solution is 
+
+$$x \equiv 4*405*4 + 1*315*3 + 0 \quad (mod \; 2520) \equiv 1449 (mod \; 2520)$$
 
 ##### Q.9 (10 points) Recall the RSA public key cryptosystem:
 
@@ -208,7 +268,7 @@ Bob posts a public key $(n,e)$ and keeps a secret key $d$, where $n$ is the prod
 </br>
 </br>
 
-<style>
+<style lang="css">
 div{
  text-align: center;
 }
