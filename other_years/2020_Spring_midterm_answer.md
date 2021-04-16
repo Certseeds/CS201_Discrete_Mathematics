@@ -4,7 +4,7 @@
  * @Author: nanoseeds
  * @Date: 2021-04-09 12:08:27
  * @LastEditors: nanoseeds
- * @LastEditTime: 2021-04-16 17:05:16
+ * @LastEditTime: 2021-04-16 19:25:30
  * @License: CC-BY-NC-SA_V4_0 or any later version 
  -->
 
@@ -192,13 +192,13 @@ then we need to prove $n^{13} − 2\cdot n^{7}+n$ can be divide by 49.
 
 $$n^{13} − 2\cdot n^{7}+n = n(n^6 -1)^2$$
 
-if $n \; mod \; 7 = 0$, then $(n^6 -1)^2$ is not divisible by 7.
+if $n \  mod \  7 = 0$, then $(n^6 -1)^2$ is not divisible by 7.
 
-if $n \; mod \; 7 \neq 0$, then $(n^6 -1)^2$ is divisible by 7 by Fermat's little theorem.
+if $n \  mod \  7 \neq 0$, then $(n^6 -1)^2$ is divisible by 7 by Fermat's little theorem.
 
-if $n \; mod \; 49 = 0$, then the other part is no need.
+if $n \  mod \  49 = 0$, then the other part is no need.
 
-So, all in all, $n \; mod \; 49 = 0$ or $n \; mod \; 7 \neq 0$
+So, all in all, $n \  mod \  49 = 0$ or $n \  mod \  7 \neq 0$
 
 ##### Q.8 (14 points) For a collection of balls, the number is not known
 
@@ -214,42 +214,42 @@ How many balls are there?Give the details of your calculation
 
 We have
 
-$$X \equiv 1 (mod \; 2)$$
-$$X \equiv 0 (mod \; 3)$$
-$$X \equiv 1 (mod \; 4)$$
-$$X \equiv 4 (mod \; 5)$$
-$$X \equiv 3 (mod \; 6)$$
-$$X \equiv 0 (mod \; 7)$$
-$$X \equiv 1 (mod \; 8)$$
-$$X \equiv 0 (mod \; 9)$$
+$$X \equiv 1 (mod \  2)$$
+$$X \equiv 0 (mod \  3)$$
+$$X \equiv 1 (mod \  4)$$
+$$X \equiv 4 (mod \  5)$$
+$$X \equiv 3 (mod \  6)$$
+$$X \equiv 0 (mod \  7)$$
+$$X \equiv 1 (mod \  8)$$
+$$X \equiv 0 (mod \  9)$$
 
-$X \equiv 3 (mod \; 6)$, so $x = 6k+3$, it make $X \equiv 1 (mod \; 2)$ and $X \equiv 0 (mod \; 3)$, in other word, we now have
+$X \equiv 3 (mod \  6)$, so $x = 6k+3$, it make $X \equiv 1 (mod \  2)$ and $X \equiv 0 (mod \  3)$, in other word, we now have
 
-$$X \equiv 1 (mod \; 2)$$
-$$X \equiv 0 (mod \; 3)$$
-$$X \equiv 1 (mod \; 4)$$
-$$X \equiv 4 (mod \; 5)$$
-$$X \equiv 0 (mod \; 7)$$
-$$X \equiv 1 (mod \; 8)$$
-$$X \equiv 0 (mod \; 9)$$
+$$X \equiv 1 (mod \  2)$$
+$$X \equiv 0 (mod \  3)$$
+$$X \equiv 1 (mod \  4)$$
+$$X \equiv 4 (mod \  5)$$
+$$X \equiv 0 (mod \  7)$$
+$$X \equiv 1 (mod \  8)$$
+$$X \equiv 0 (mod \  9)$$
 
-$X \equiv 0 (mod \; 9)$ make $X \equiv 0 (mod \; 3)$ always true, then 
+$X \equiv 0 (mod \  9)$ make $X \equiv 0 (mod \  3)$ always true, then 
 
-$$X \equiv 1 (mod \; 2)$$
-$$X \equiv 1 (mod \; 4)$$
-$$X \equiv 4 (mod \; 5)$$
-$$X \equiv 0 (mod \; 7)$$
-$$X \equiv 1 (mod \; 8)$$
-$$X \equiv 0 (mod \; 9)$$
+$$X \equiv 1 (mod \  2)$$
+$$X \equiv 1 (mod \  4)$$
+$$X \equiv 4 (mod \  5)$$
+$$X \equiv 0 (mod \  7)$$
+$$X \equiv 1 (mod \  8)$$
+$$X \equiv 0 (mod \  9)$$
 
-$X \equiv 1 (mod \; 8)$ make $X \equiv 1 (mod \; 2)$ and $X \equiv 1 (mod \; 4)$ always true, then 
+$X \equiv 1 (mod \  8)$ make $X \equiv 1 (mod \  2)$ and $X \equiv 1 (mod \  4)$ always true, then
 
-$$X \equiv 4 (mod \; 5)$$
-$$X \equiv 0 (mod \; 7)$$
-$$X \equiv 1 (mod \; 8)$$
-$$X \equiv 0 (mod \; 9)$$
+$$X \equiv 4 (mod \  5)$$
+$$X \equiv 0 (mod \  7)$$
+$$X \equiv 1 (mod \  8)$$
+$$X \equiv 0 (mod \  9)$$
 
-Then $5,7,8,9$ are pairwise relatively prime, we can use Chinese Remainder Theroem or back substitution to solve this system of congruences. 
+Then $5,7,8,9$ are pairwise relatively prime, we can use Chinese Remainder Theroem or back substitution to solve this system of congruences.
 
 $$m = 5 \cdot 7 \cdot 8 \cdot 9 = 2520$$
 $$m_1 = 7 \cdot 8 \cdot 9 = 504$$
@@ -257,16 +257,27 @@ $$m_2 = 5 \cdot 8 \cdot 9 = 360$$
 $$m_3 = 5 \cdot 7  \cdot 9 = 315$$
 $$m_4 = 5 \cdot 7 \cdot 8 = 280$$
 
-By extended Euclidean algorithm, we have $y_1 = 4, y_2 = 5, y_3 = 3, y_4 = 1$.Then by Chinese Remainder Theorem, we have the solution is 
+By extended Euclidean algorithm, we have $y_1 = 4, y_2 = 5, y_3 = 3, y_4 = 1$.Then by Chinese Remainder Theorem, we have the solution is
 
-$$x \equiv 4*405*4 + 1*315*3 + 0 \quad (mod \; 2520) \equiv 1449 (mod \; 2520)$$
+$$x \equiv 4*405*4 + 1*315*3 + 0 \quad (mod \  2520) \equiv 1449 (mod \  2520)$$
 
 ##### Q.9 (10 points) Recall the RSA public key cryptosystem:
 
 Bob posts a public key $(n,e)$ and keeps a secret key $d$, where $n$ is the product of two prime numbers. When Alice wants to send a message $0< M < n$ to Bob, she calculates $C=M^{e}$(mod $n$) and sends $C$ to Bob. Bob then decrypts this by calculating $C^{d}$(mod $n$). Given the value of $ \phi (n) = {7070}_8$ in *octal expansion* for $n= {7070}_8$ also in *octal expansion*. Can you factorize $n$, i.e., to find the values of $p$ and $q$? Explain your answer
 
-</br>
-</br>
+Answer:
+
+Yes,
+
+$${7070}_8 = {3640}_{10}$$
+$${7263}_8 = {3763}_{10}$$
+
+Then By the equation $\phi(n) = (p-1)(q-1) = (n+1) - (p+q)$, we know that $pq = n = 3763$ and $p+q = (n+1) - \phi(n) = 124$. Thus, $p,q$ is two root of a equation
+
+$$x^{2} - 124x + 3763 = 0$$
+
+$$(x-53)(x-71) = 0$$
+so $p,q = 53,71$
 
 <style lang="css">
 div{
