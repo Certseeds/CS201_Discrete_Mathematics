@@ -4,7 +4,7 @@
  * @Author: nanoseeds
  * @Date: 2021-04-09 12:08:27
  * @LastEditors: nanoseeds
- * @LastEditTime: 2021-04-16 19:25:30
+ * @LastEditTime: 2021-04-16 19:28:31
  * @License: CC-BY-NC-SA_V4_0 or any later version 
  -->
 
@@ -259,7 +259,7 @@ $$m_4 = 5 \cdot 7 \cdot 8 = 280$$
 
 By extended Euclidean algorithm, we have $y_1 = 4, y_2 = 5, y_3 = 3, y_4 = 1$.Then by Chinese Remainder Theorem, we have the solution is
 
-$$x \equiv 4*405*4 + 1*315*3 + 0 \quad (mod \  2520) \equiv 1449 (mod \  2520)$$
+$$x \equiv 4 \ast 405 \ast 4 + 1 \ast 315 \ast 3 + 0 \quad (mod \  2520) \equiv 1449 (mod \  2520)$$
 
 ##### Q.9 (10 points) Recall the RSA public key cryptosystem:
 
